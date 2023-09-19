@@ -1,0 +1,984 @@
+lunedi  04 settembre 2023
+
+Inizio corso Experis C# e .NET 
+
+Giada Vitali, ci tutora 
+oggi presentazione
+
+al pome piu per il lavoro l'altra persona
+
+Experis incentrata tutto per l'IT
+hanno anche una software house a Bari che di creare software per i loro clienti
+
+la Experis Academy si occupa della formazione
+
+nasce perchè c'e un gap fra quello che cercano le aziende e quello che il mercato dei lavoratori offre
+
+molte aziende non sa bene chi cerca
+
+skill shortage = le aziende non trovano le persone che hanno le skills che effettivamente gli servono
+
+entro il 2025 ci sarà un aumento di questa dinamica
+
+
+Soft Skill principali:
+
+ragionamento critico, creatività originalità, problem solving, affidabilità, saper prendere l'iniziativa
+
+Experis fa:
+Upskilling, chi ha gia competenze di informatica ma vuole un grosso aggiornamento e formazione
+
+Reskilling, persone con background diverso da quello con cui si formeranno dopo
+
+Learn By Doing: Teoria e Tanta Pratica
+
+Giada ci chiede come va ogni tanto.
+
+
+REGOLE CORSO:
+1.Forma-temp - fondo interprofessionale che permette il finanziamento di formazione a inoccupati o disoccupati in modo da fornire un contratto alla fine, gratuito per i partecipanti.
+
+2.Experis finanzia il corso coi fondi accantonati da loro per essere inserito nel lavoro, con contratto di somministrazione, quando siamo assunti una quota dall agenzia va a experis cosi si continua a formare gente.
+Contratto in somministrazione fa il contratto con l'agenzia experis e lavora pero nell azienda x. Non ha il contratto direttamente con l'azienda.
+
+3.Firmare il patto formativo. (fatto)
+
+4.Non si puo avere contratti di lavoro attivi durante il corso.
+
+5.Il corso è soggetto a controlli da parte di ispettori. Quindi sempre connessi con webcam accesa, tranne durante la pausa.
+Si deve frequentare almeno il 70% delle ore di lezione.
+Massimo 71 ore di assenza quindi 9 giorni.
+237 ore tot
+Obbligo di frequentare i moduli di sicurezza sul luogo di lavoro e diritti e doveri dei lavoratori.
+Bisogna comunicare ritardi o assenze o uscite anticipate su chat di gruppo.
+Non ci si collega da telefono solo pc o tablet.
+
+vietato svolgere altre attività durante la formazione. 
+
+6.Minimo 60 giorni dopo la fine del corso riceveremo attestato di frequenza e attestato di sicurezza generale.
+
+7.Le lezioni saranno registrate
+
+8.Il corso non si puo' frequentare al di fuori dell'Italia.
+
+9.Se il docente non fa l'appello ricordateglielo, se non si presenta fatelo presente per essere segnati nella frequenza.
+
+10. Mercoledi 27 SETTEMBRE tutti presenti obbligatoriamente ci sono i corsi obbligatori, se perdi questa giornata perdi tutto il corso.
+
+
+La piattaforma registra l'orario di entrata e uscita al secondo. quindi mega puntuali e uscire alle 00 cosi da coprire tutta la fascia oraria.
+
+https://join.slack.com/t/imparaaprogrammare/shared_invite/zt-21uearg8i-Jgge0Wmgvf4ZmoXMdwCOHw 
+
+
+Se durante il corso delle aziende ci contattino, in qualunque caso fate sapere.
+
+
+cosa ti ha spinto a frequentare boolean e di entrare nel mondo IT (information technology)
+
+studia l'azienda o l'interlocutore per migliorare il tuo colloquio,
+ricorda che il tuo set é importante
+
+dire che cosa puo essere collegato con le tue esperienze, valorizzarsi durante il colloquio
+
+Martedi 5 Settembre 2023
+lezione 1
+
+il linguaggio di programmazione é lo strumento l'arte é programmare
+
+useremo un altro ide
+
+SLIDES
+C# linguaggio di programmazione
+-Mezzo di comunicazione
+-Comunicare con il computer
+-La programmazione é il modo di dare le istruzioni al computer
+-con le istruzioni il computer risolve problemi o svolge funzioni
+
+.NET é il framework di C#
+nasce nel 2000 da microsoft si ispira da C++ e Java
+-una collezione di strumenti
+-risolve i problemi più comuni ma necessari
+-.NET é cosi diffuso che é interpretabile da ogni dispositivo
+
+perché impararlo
+C# è moderno e sempre in evoluzione e molto usato come .NET
+
+visual basic->primo linguaggio di microsoft
+net core->aperto
+
+(flutter-> framework bello per la grafica, sviluppato da google, buonissimo per il mobile)
+
+il linguaggio è solo il mezzo per comunicare al pc le cose, ma quello che conta è la logica e il problem solving
+
+C# e .NET è utile per 
+-Sviluppo videogiochi (unity)
+-Sviluppo Backend e RestAPI
+-Applicazioni per Windows
+
+
+IDE = Integrated Development Environment
+
+VS Code nasce come editor di testo ma poi con tutti gli add on diventa una specie di ide ma non lo è
+
+un ide vera ti da strumenti per:
+-Editor di testo
+-Debugger
+-Deploy
+-Automazione della build
+
+vs code pesa poco, vs 2022 pesa di piu tipo 10gb
+
+
+metodi C#
+Print nella console
+Console.WriteLine("stringa");
+
+Prendi un input dall utente
+Console.ReadLine();
+e lo salvi in una variabile
+puoi non tipizzare la variabile se vuoi con var.. per adesso faremo cosi ma fa schifo
+
+var nome = Console.ReadLine();
+
+[
+	if else
+	switch 
+	for
+	while
+	do while
+
+]->uguali a JS
+
+
+array:
+//array di 3 stringhe
+string[] nomeArray = {"elemento1","elemento2","elemento3"};
+
+non si possono inserire tipi diversi dentro lo stesso array
+
+su C# quando dichiari un array di 3 elementi potra avere solo quel numero di elementi, quindi non puoi aggiungerne o toglierne.
+al massimo puoi modificare uno di quegli elementi ri assegnando il valore usando l'indice per accedere alla memoria.
+
+nomeArray[0] = "Mario";
+
+la length di un array ha il metodo .Length
+
+si scrive nomeArray.Length//da numero di elementi;
+
+System.Console.WriteLine("ciao");
+System si puo omettere perchè il suo namespace è gia importato di default
+
+Write non va a capo
+WriteLine scrive e poi va a capo alla fine
+
+ESERCIZIO
+
+Esercizio di oggi sugli Array: Miei cibi preferiti
+Nome repo: csharp-cibi-preferiti
+Nome progetto csharp: csharp-cibi-preferiti
+Create un progetto App Console CibiPreferiti con Visual Studio.
+Nel programma inizializzate un array con la classifica dei vostri cibi preferiti (minimo 5, massimo 10 elementi).
+L’array deve essere già inizializzato nel programma, e i vostri cibi preferiti non vanno chiesti all’utente tramite input.
+Una volta dichiarato l’array di cibi preferiti, stampate a video le seguenti informazioni:
+- La lunghezza della classifica
+- La vostra classifica (dunque stampare l’intero array in ordine indicando la posizione in classifica)
+- Il vostro cibo top (prima posizione della classifica)
+- Il vostro cibo preferito ma non troppo (ultima posizione della classifica)
+Le modalità di consegna sono le solite: repo GitHub, commit e push
+BONUS
+Stampate a video anche il cibo di mezza classifica, cioè che si trova nella posizione mediana.
+Attenzione: gestire anche il caso se aveste una classifica con un numero di elementi pari. In questo caso vanno stampati i 2 elementi in centro alla vostra classifica.
+Buon pomeriggio e buon lavoro!
+
+Mercoledì 6 Settembre 2023
+
+Lezione
+
+Type System - Tipizzazione (la vera potenza di C#)
+
+Ogni variabile, costante o espressione e funzione hanno un tipo o restituiscono un tipo
+
+Ogni funzione ha il tipo restituito, il nome, il tipo di ogni parametro
+
+I tipi servono per il compilatore che aiuta prima di eseguire il programma e usa il codice e lo converte in codice binario, ti aiuta perché ti da errore
+
+nomeVariabile.GetType()//ritorna il tipo della variabile
+
+int varNumIntero;
+bool varBoolean;
+float varNumVirgola;
+
+
+quando dichiari una variabile anche se non hai inizializzato niente c# sa che deve allocare ovvero tenere riservato uno spazio di memoria grande quanto il tipo di variabile richiede, ad esempio per un int servono 4byte
+
+i tipi valore mantengono il loro valore e non il rifermento
+
+nei tipi riferimento invece (array, objects e dynamics) quando assegni il loro valore a un altra variabile si mantiene il riferimento. Quindi modificando la copia cambierai anche la variabile di partenza perchè ce il riferimento (puntatore)
+
+le string sono tipi riferimento ma si comporta come un tipo valore.
+
+Se volessi indicare  un array vuoto:
+int[] arrayVuoto = new int[10];// crea un array con 10 elementi e il valore di default degli interi é 0
+string[] arrayVuoto = new string[10];// di default da null a ogni elemento.
+
+si puo usare una variabile int per definire la dimensione dell array, ad esempio da un input dall'utente.
+
+Ogni input preso dalla console ad esempio da un Console.ReadLine(); è considerato come String quindi se ti serve un numero intero si deve convertire
+int numero = Convert.ToInt32(Console.ReadLine());
+alternativa
+int numero = int.Parse(Console.ReadLine());
+
+per avere una shallow copy di un array usa il method .Clone();
+attenzione perche restituisce un oggetto quindi usa il casting per fargli capire di che tipo lo vuoi
+
+int[] copiaArray = (int[])arrayVecchio.Clone();
+
+tipi di errori
+
+Compile-time errors: errori di sintassi di C# il compilatore te lo dice
+Run-time errors: errori che compaiono eseguendo il programma non te lo dice il compilatore
+Logic errors: errori che portano output o comportamenti diversi da quelli previsti, ma che dal lato compilatore o run vanno bene
+
+Static Typing: Linguaggi che eseguono il controllo dei tipi dichiarati da noi in fase di compilazione quindi si ferma prima e ti fa capire cosa sbagli.
+
+Dynamic Typing: Questi linguaggi assegnano ed eseguono controllo ai tipi in fase di esecuzione.
+
+
+Giovedi 7 Settembre 2023
+LEZIONE
+
+Funzioni
+Istruzioni racchiuse in un blocco di codice a cui viene assegnato un nome, sono utili per risparmiare codice, organizzare meglio, avviare codice solo quando necessario 
+
+se stai copia-incollando allora crea una funzione! NO CODICE DUPLICATO!
+
+sintassi:
+nome, parametri, tipo di return, corpo funzione
+
+int NomeFunzione(int par1, string par2){
+
+	int risultato = par1 + par2.Length;
+	return risultato;
+
+}
+in C# per il nome delle funzioni si usa il PascalCase
+clean code dice se stai usando da 5 parametri in su in una funzione probabilmente ce un modo migliore di scrivere il codice (oggetto o altro)
+
+Il compilatore controlla i tipi che hai messo
+
+Ricorda il return di default, o lancia un eccezione nelle funzioni
+
+Una volta creata la funzione bisogna invocarle!
+passa il valore ritornato in una variabile se vuoi
+int somma = nomeFunzione(5, "ciao!");//somma è 10
+
+Per creare funzioni che non restituiscono niente si usa il void (vuoto);
+
+void Stampa()
+{
+	Console.Write("ciao");
+}
+
+Stampa();//ciao
+
+
+Puoi invocare funzioni dentro altre funzioni, o anche passare funzioni come argomento.
+Sempre per semplificare e creare codice piu pulito e composto in piccoli frammenti
+
+
+Lavorare sui tipi valore o sui tipi rifermiento
+funzioni
+se chiedo un parametro di tipo valore quando vado a modificarlo dentro creera un altra variabile che copia il valore! Quindi la var originale non viene intaccata, pero occupi piu allocazioni di memoria.
+
+Come passare il riferimento con un tipo valore?
+usi la keyword ref (reference)
+
+int ModificaNumero(ref int numero){
+	numero = numero + 1;
+	return numero;
+}
+
+poi pero quando invochi la funzione devi passare l'argomento sempre col ref!
+int n = 10;
+ModificaNumero(ref n);
+
+Qui non serve assegnare il valore ritornato dalla funzione a una variabile dal momento che dentro la funzione si lavora sul riferimento della variabile esterna quindi da quel momento in poi il valore di n sarà modificato
+
+serve a cambiare il valore di una variabile fuori dallo scope usando la ref dentro lo scope della funzione
+
+Quando invece vuoi fare una copia ricorda di usare il metodo .Clone();
+
+int[] arrayCopy = (int[])array.Clone();
+
+Ricorda sempre di fare il casting del giusto tipo perchè la clone restituisce un oggetto.
+
+
+variabili globali e locali
+
+le globali sono sopra tutti gli scope e sono visibili in tutti i loro scope piu interni
+
+semi globali sono fra uno scope e l'altro 
+
+locali sono quelle dentro lo scope in cui le stiamo usando
+
+LEZIONE Venerdi 8 Settembre 2023
+
+OOP
+Object Oriented Programming
+Programmazione Orientata a Oggetti
+
+Si basa sul concetto di Classe e Oggetto
+Un modo di organizzare il codice che imita il mondo reale.
+
+Tutto è un oggetto e tutti gli oggetti hanno:
+- delle caratteristiche: attributi intrinseche all oggetto, il valore cambia da oggetto a oggetto. Ancora senza valore.
+- uno stato: lo stato non interferisce con quelli della stessa classe. Quando gli attributi hanno un valore.
+- delle azioni con cui interagiscono tra loro e col mondo esterno: i metodi che permettono all oggetto di fare qualcosa.
+
+Possiamo dare il nome ad un oggetto, ogni oggetto ha delle caratteristiche in comune con altri oggetti della stessa tipologia o meglio della stessa Classe.
+
+Un altro modo di considerare la Classe è come se essa sia il modello da dove poi si creano gli oggetti.
+
+La Classe è come un Blueprint per poi stampare tanti Oggetti.
+
+un monitor
+un telefono
+una pianta
+
+sono tipologie di oggetto, in modo generico
+
+Una volta creata una Classe puoi creare diversi oggetti e fargli prendere forma assegnandoli valori agli attributi.
+Un monitor samsung è un istanza della classe monitor quindi è un oggetto.
+
+Ogni oggetto è separato dagli altri come se fosse un mondo a se. Puo comunicare col mondo esterno solo attraverso i propri methods
+
+SINTASSI
+
+modificatore d'accesso:
+public
+protected
+private
+internal
+
+crea classe 
+
+keyword class
+
+public class Auto{
+	public string colore;
+	public string marca;
+	public int annoImmatricol;
+}
+
+Una classe definisce un nuovo tipo di dato non primitivo
+
+Crea Istanza
+usi il tipo Auto e usi il suo costruttore.
+Auto miaAuto = new Auto();//oggetto vuoto
+
+in scrittura puoi usare la dot notation
+miaAuto.colore = "bianco";
+miaAuto.marca = "Toyota";
+
+leggere
+Console.WriteLine("miaAuto.colore");\\ stampa bianco.
+
+ATTENZIONE questo metodo di scrittura e lettura è errato, in realta si devono usare i metodi getter e setter o altri
+
+Metodi
+
+dentro la classe 
+public void Accenditi(){
+	Console.WriteLine("VROOM");
+}
+
+public void CambiaColore(string nuovoColore){
+	colore = nuovoColore;//puoi usare this per disambiguare i nomi
+}
+
+public void CambiaMarca(string marca){
+	this.marca = marca;
+}
+
+
+Invocare i metodi di un oggetto
+Auto miaAuto = new Auto()
+miaAuto.CambiaColore("nero");
+
+
+Anche Console è una Classe!
+Console ha il metodo ReadLine();
+Console.ReadLine();
+
+Costruttore.
+È un metodo speciale che ti permette di assegnare subito dei valori iniziali agli attributi di una classe quindi a definire già gli stati di quel determinato oggetto al momento della creazione
+
+Ogni classe ha un costruttore almeno, possono esserne creati di piu con lo stesso nome (overloading) in modo da avere piu modi diversi per istanziare l'oggetto.
+
+Ha lo stesso nome della classe e non ha tipo di ritorno
+Nel momento in cui si utilizza la parola new viene chiamato il costruttore
+
+Public class Monitor{
+	public bool acceso;
+	public string modello;
+
+	//costruttore
+	public Monitor(){
+		this.acceso = false;
+	}
+	
+	//costruttore con parametri cosi capisce a quale costruttore riferirsi
+	public Monitor(string modello){
+		this.acceso = false;
+		this.modello = modello;
+	}
+}
+
+Per far capire al programma quale costruttore usare o gli dai attributi diversi, o di tipo diverso, o in ordine diverso.
+Puoi inserire quanti costruttori vuoi.
+
+Concetto di overload:
+Piu metodi o costruttori possono avere lo stesso nome e diversi parametri e in base ai parametri o l'ordine o il tipo si capisce quale usare
+
+Come creare piu classi nello stesso progetto:
+
+per ogni classe crei un nuovo file nella stessa Solution
+usando crea item o class
+su vs2022 ti crea gia un minimo di struttura, col namespace ecc.
+per adesso da internal mettiamo public sulle nuove classi create.
+   
+
+Principio dell INCAPSULAMENTO
+
+information hiding,
+bisogna creare gli attributi e settarli in modo che possano essere letti o scritti o modificati dai metodi che abbiamo definito noi e non direttamente accedendo alla variabile. In modo da mantenere la coerenza della classe creata. E anche per bloccare operazioni malevole dall esterno.
+In questo modo dai la responsabilità all oggetto di eseguire l'operazione come dicono i metodi. Eviti anche i potenziali errori.
+
+
+same assembly = stesso progetto
+
+visibilità attributi
+public si vede ovunque
+protected internal
+protected classe e sottoclasse derivata
+internal classe sottoclasse derivata e non derivata
+private solo quella classe 
+
+GETTER E SETTER
+sono metodi che si occupano di leggere o scrivere gli attributi di una classe e quindi degli oggetti o istanze di quella classe dal momento che per via dell'incapsulamento noi mettiamo gli attributi come private.
+
+Per convenzione in C# a volte si mette GetNomeMetodo o SetNomeMetodo come nome dei method
+
+vantaggi:
+-posso avere solo getter cosi dai accesso in sola lettura.
+-posso avere solo setter rendendo l'attributo configurabile.
+ e altri(slides)
+
+PROPERTIES
+Proprietà
+
+Combinazione speciale fra attributi e metodi
+Per convenzione la proprieta ha lo stesso nome dell attributo ma con la lettera maiuscola. Dentro definisci i suoi get e set cosi in un colpo fai piu cose.
+
+public class Rettangolo{
+
+	private int dimensioneBase;
+
+	public int DimensioneBase{
+
+		get{
+			return dimensioneBase;
+		}
+		set{
+			dimensioneBase = value;//basta mettere  value come keyword
+		}
+	}
+
+}
+ 
+
+uso di properties
+mioRettangolo.DimensioneBase = 3;// qui capisce immediatamente setter
+mioRettangolo.DimensioneBase;//senza parentesi capisce che è il getter
+
+Opzione molto piu corta ma meno potente.
+
+public class Rettangolo{
+//non serve piu dichiarare l'attributo per forza, ma se vuoi usarla nei method dichiarala ma non sara la stessa, non è agganciata Solo col metodo lungo la agganci. Poi la prop, puoi fare tutto in un colpo ricorda di metterla public.
+
+	public int DimensioneBase{get; set;}
+}
+
+nel costruttore dentro la classe pero puoi settare la proprieta che hai messo solo in get.
+
+con le eccezioni puoi impedire la creazione dell oggetto nel caso un attributo nel costruttore non venga correttamente creato.
+
+nel costruttore puoi anche richiamare i metodi o i setter che hai creato ad esempio se gia il setter fa un sacco di controlli cosi non devi riscriverlo.
+
+
+Lunedi 11 Settembre 2023
+Lezione
+
+Composizione ed Ereditarietà
+
+Come riutilizziamo il codice?
+Funzioni e Methods
+oppure con le Classi
+
+Ogni classe puo essere un componente di un altra dove all interno quindi crei istanze di altre classi all interno.
+Ad esempio quando crei delle String
+
+.NET Collections Framework = Insiemi di oggetti(o tipi)
+
+Gli array hanno il limite di grandezza definita non si possono creare array dinamici
+
+C# Collections->usi la libreria System.Collections
+
+Sono semplici collezioni di Classi, Interfacce e dentro hanno gia molti algoritmi e funzioni avanzate implementati
+
+Classe List = sequenza di elementi, possono essere duplicati e sono ordinati in base all ordine di inserimento.
+Il vantaggio della List è che ha dimensione dinamica
+
+Dictionary = Insieme di coppie, chiave/valore
+le keys sono univoche e non possono esserci keys duplicate
+il value puo essere quello che vuoi
+
+Su JAVA i dictionary sono le Map
+
+Generics = crei la firma di una collection definisci il tipo di dato che contengono
+List<string> listaStringhe = new List<string>();
+
+Dictionary<int,string> dizionarioChiaveValore = new Dictionary<int,string>();
+
+Super CICLO FOR
+foreach
+
+List<string> iscritti = new List<string> {"gino", "paolo", "marcus"};
+
+foreach (string iscritto in iscritti){
+	Console.WriteLine(iscritto);
+}
+
+È best practice che in un foreach non si modifichi l'elemento ciclato iscritto in questo caso
+Ovvero sia in sola lettura e non in scrittura
+
+
+Le Collections sono considerate oggetti come ogni cosa in C# quindi sono presi per riferimento
+
+
+concetto di EREDITARIETÀ
+Come nella realta alcune classi potrebbero derivare da un altra classe padre o superclasse, che eredita tutti i precedenti attributi e metodi ma ne ha in aggiunta le sue caratteristiche di sottoclasse o chiamata anche classe derivata
+
+per ereditare si crea una classe si mettono in due punti e poi il nome della superclass da cui vuoi ereditare
+
+nel costruttore metti anche gli attributi della superclass ma specifici quale deve prenderlo dalla superclass, fra i public protected(che le prende solo la class e la classe derivata)
+
+public class Dog : Animal{
+	private string razza;
+	public Dog(string nome, string razza) : base(nome){
+		this.razza = razza;
+	}
+}
+
+scrivendo :base ti riferisci alla superclass e gli dici quale attributo andare a prendere da li
+
+Concetto di POLIMORFISMO
+
+serve ad avere piu metodi definiti con lo stesso nome purche abbbiano un numero diverso di parametri, e in base ai parametri utilizzati nell invocazione verra richiamato il metodo giusto. Ad esempio il costruttore puo essere multiplo o anche i metodi della stessa classe
+
+nella sottoclasse per ridefinire un metodo di una superclasse bisogna invece aggiungere la parola override prima di definire il metodo che si vuole modificare, a patto che nella superclasse quella funzione sia dichiarata con la keywork virtual
+
+superclasse
+public virtual void Stampa(){
+	Console.WriteLine("Ciao!");
+}
+
+sottoclasse
+public override void Stampa(){
+	Console.WriteLine("Ciao! Io sono la sottoclasse e ho overridato il metodo");
+base.Stampa();//cosi invece richiamo il metodo della mia superclasse cosi come ce l'ha lei
+}
+
+con base e la dot notation in una sottoclasse posso andare a prendere gli attributi della superclasse
+
+superclass
+this.attributo;
+
+sottoclasse
+base.attributo;
+
+in pratica 
+this -> classe corrente
+base -> indica la superclasse della classe corrente
+
+nel costruttore una sottoclasse deve SEMPRE richiamare tutti gli attributi che passano nel costruttore della sua superclasse
+
+in C# ogni classe ha come superclasse Object
+
+toString(): ritorna una stringa che rappresenta l'oggetto
+equals(Object obj): ritorna il valore booleano di equivalenza tra l'oggetto e un altro oggetto.
+
+Quando esegui un metodo di una sottoclasse ma ciclandola trattandola e indicandola come la sua super class, lei eseguira il medodo overridato della sottoclasse.
+
+foreach(Immobile immobile in laMiaListaDiImmobili)
+{
+	immobile.StampaInfo();
+	if(immobile is Villa)//is compara i tipi!
+	{
+		Villa villa = (Villa)immobile;//casti l'immobile come villa
+		villa.StampaInfoGiardino();//usi il metodo unico della sottoclasse
+	}
+}
+
+
+LEZIONE MARTEDI 12 Settembre 2023
+
+
+Attributi e metodi STATICI
+
+vuoi dichiarare metodi che non hanno bisogno di un oggetto istanziato per essere usati ma sono elementi che riguardano la classe stessa
+
+magari una classe che potrebbe essere semplicemente un contenitore di funzioni
+
+public class Statica{
+
+	public static void StampaStatica(){
+		Console.WriteLine("Io stampo direttamente perche sono un metodo statico della classe Statica");
+	}
+}
+
+Statica.StampaStatica();
+
+Se creo una classe static invece lei non potra mai MAI istanziare oggetti e TUTTI i suoi metodi saranno static
+
+una classe static avra tutti attributi static
+una classe NON static puo avere metodi statici
+
+
+Attributi static fanno riferimento alla classe non all istanza
+quindi puoi ad esempio creare un contatore di quante istanze hai creato da quella classe
+È come se fosse una variabile globale nello scope di tutte le istanze di quella classe.
+
+readonly -> keyword per definire costanti come const su JS o C o final su JAVA
+
+
+Composition
+quanto un oggetto o classe è composta da altri oggetti
+
+
+Per esercizio di oggi
+per chi vuole
+usate le funzioni coi tipi Generics Types
+
+
+LEZIONE Mercoledi 13 Settembre 2023
+Astrazione e Interfacce
+
+Esempio: Document é più astratta di Book
+
+Quando vuoi creare qualcosa di astratto dici cosa ma non come.
+Crei una classe astratta o un interfaccia con dei methods che sono solo firme.
+Quindi Ogni sotto classe di quell astrazione puo prendere quel metodo e usando il polimorfismo modificarlo in base alla necessità.
+
+
+classe astratta
+keyword abstract
+
+una classe abstract non puo istanziare oggetti
+un method abstract ha solo la dichiarazione/firma ma non ha il corpo.
+
+una classe abstract puo avere sia metodi astratti che normali.
+
+public abstract class Animale{
+
+	public abstract void FaiVerso();//poi lo definirai
+	public void Dormi(){
+		Console.WriteLine("ZZZzzz..");//in questo case sai che ogni animale quando dorme fa sempre cosi.
+	}
+}
+
+Una subclass per definire i metodi astratti che ha ereditato dalla classe astratta estesa deve usare il polimorfismo quindi usare l'override e da li definire finalmente il corpo della funzione
+
+In una subclass bisogna overridare TUTTI i metodi asbtract della classe estesa/ereditata
+
+il vantaggio è che una volta che hai delle classi derivate da una classe astratta è che poi puoi creare una Collection e raggrupparle tutte, ciclarle, e usare i methods che ogni subclass ha definito a modo suo.
+
+nella abstract class puoi creare degli attributi, il costruttore e assegnarli i valori
+
+cosi poi nelle subclass implementando il costruttore che richiama gli stessi parametri con il :base e cosi le classi 
+
+il vantaggio ulteriore è che siccome il metodo astratto sta nella classe astratta superiore quando ti riferisci alla super class ti si presentano tutti i metodi disponibili senza dover andare dentro tutte le sottoclassi per vedere che metodi hanno.
+
+
+Con le classi astratte puoi gia scrivere tutto il codice utilizzando i metodi e classi astratte senza dare errori, e poi quando verranno implementate le istanze delle subclass di quella classe astratta allora funzionerà tutto
+
+
+Interfacce   //ancora piu astrazione
+keyword: interface
+
+è come se fosse una classe completamente astratta quindi non piu una classe, dove ci sono SOLO metodi astratti.
+L'interfaccia stabilisce a cosa devono assomigliare tutte le classe che la implementano, come un contratto. Cosi quando crei la classe sei obbligato a mettere quei metodi per forza.
+Nelle interfacce NON ci sono costruttori.
+Convenzione metti una I maiuscola davanti al nome interfaccia
+
+Si implementa un interfaccia a una classe coi due punti. Ora tutti le classi implementate con l'interfaccia sono anche di tipo dato dall interfaccia
+
+public class Cavallo : IAnimale{
+
+}
+
+NON si possono definire attributi in un interface ma si possono implementare delle Proprietà
+puoi anche implementare piu interfacce assieme
+
+
+public class Mucca : Interfaccia1, Interfaccia2{
+
+}
+
+Attenzione NON si puo ereditare o implementare invece piu di una classe, normale o astratta che sia.
+
+Differenza importante
+Una classe ESTENDE un altra classe
+un classe IMPLEMENTA un interfaccia
+
+
+LEZIONE 14 Settembre 2023 (Compleanno Sara<3)
+
+
+Eccezioni, TRY CATCH e FILE
+
+una condizione eccezionale è un problema che impedisce il proseguimento del metodo o del programma corrente.
+esempio
+-Una pre-condizione dichiarata da noi risulta essere falsa: un oggetto è null dove non ce lo aspettiamo
+
+ci sono 3 tipi di errori
+Usage Errors: errori logici di scrittura codice->modifichi il codice e lo correggi
+Program Errors: avvengono durante il run e possono essere previsti e gestiti con il meccanismo delle eccezioni
+System Failures: errori fatali che non possono essere gestiti__troppa memoria usata o ram vecchia quindi problema fisico.
+
+C# ha la sua class Exception per gestire gli errori.
+quindi crei l'oggetto e poi lo lanci
+la class Exception ha diverse sotto classi piu specifiche per ogni tipo di eccezione.
+
+Noi possiamo anche costumizzare un eccezione e crearci la nostra.
+Basta ereditare da Exception
+public class NuovaEccezione : Exception{}
+
+Come sollevare un eccezione:
+si crea una nuova istanza dell errore dopo la keyword throw
+ricorda la keyword new!!!!!!
+if(object == null){
+	throw new ArgumentNullException("Oggetto nullo", e);
+}
+
+intercettare un eccezione
+TRY CATCH
+la zona sorvegliata è il blocco try
+se viene sollevata un eccezione viene catturata dal blocco catch
+
+
+quindi se il programma va a buon fine si va avanti. Ma se dentro il catch si verifica l'eccezione la catturano, e la puoi gestire, per catturare la specifica eccezione tu ci specifichi il tipo di eccezione e quindi gestisci ogni eccezione in maniera diversa
+
+try{
+	//prova a eseguire questo codice
+}catch(ExceptionType e){
+	//fai cosi
+}catch(ExceptionType2 e){
+	//fai colà
+}
+
+la e è l'oggetto eccezione che eèstato lanciato(o da te o dal programma)
+questo oggetto ha le sue proprieta ad esempio e.Message (Il messaggio dell errore.)
+
+Quando c'è un eccezione il programma smette l'esecuzione.
+
+come catturare tutte le exception?
+catch(Exception e )//usi la superclasse primaria delle eccezioni.
+
+il blocco finally
+prima di uscire posso gestire altre cose
+dopo tutte le istruzioni catch il finally ci permette di scrivere del codice che viene sempre eseguito a prescindere se sia stata catturata una eccezione o no
+
+try{
+	//chiedi dati numerici all utente
+}catch(RispostaConStringa e){
+	Console.WriteLine(e.Message)
+}finally{
+	//chiudi connessione
+}
+
+a prescindere che l'utente ti abbia dato o meno il valore giusto tu interrompi la connessione alla fine.
+
+creiamo la nostra Exception
+
+internal class EmptyBottleException : Exception{
+	//costruttore
+	public EmptyBottleException() : base(){
+	}
+	
+
+	//costruttore per creare gia un eccezione col message
+	public EmptyBottleException(string message) : base(message){
+	}
+}
+
+//nella classe che puo generare l'eccezione
+
+
+throw new EmptyBottleException("Messaggio errore");
+
+//nel program
+try{
+	if(bottigliaVuota == true);
+}catch(EmptyBottleException e){
+	Console.WriteLine(e.Message);
+}finally{
+	//cambia la bottiglia.
+}
+
+Non è un buon metodo mettere tutto il codice dentro il blocco try.
+Un modo puo essere creare una Collection di quell oggetto e poi ciclare
+Attenzione lanciare le eccezioni è oneroso quindi attenzione. Piuttosto cerca di scrivere il codice con tutte le condizioni per evitare che accada un eccezione. Solo nei casi estremi magari crea un eccezione apposita.
+
+FILE
+
+Canali input -> con cui un utente puo interagire (tastiera,mouse,scanner etc)
+elaborazione....
+Canali output-> monitor, casse, produrre un file, file immagine etc
+
+in C# i dati in ingresso e uscita sono visti come flussi (stream) di byte o di caratteri
+
+BinaryReader -> BinaryWriter (binario)
+StreamReader -> StreamWriter (byte)
+StringReader -> StringWriter (stringhe)
+
+ad esempio Console.WriteLine(); è un output
+ad esempio Console.ReadLine(); è un input
+
+Console.In -> prende input da tastiera e lo porta nel programma
+Console.Out -> stampa a video i risultati dei nostri programmi
+Console.Error -> mostra a video gli errori dai nostri programmi
+
+Nella libreria System.IO c'e una classe utility File che permette di gestire i File, ce anche la classe Directory per le cartelle
+
+File è una classe statica che permette di manipolare i file
+quindi su File ce una collezione di metodi statici con tutte le operazioni che puoi usare per i file che ti restituiranno degli oggetti diversi in base al 
+
+File.Open(); apre i file.
+vuole una variabile string path e  un parametro mode che indica la modalita in cui viene aperto
+Open() restituisce un FileStream obj che permette di manipolare a lv di byte
+OpenText() invece vuole solo la path e restituisce uno StreamReader
+
+Tipi dell enun FileMode
+Create->crea e sovrascrive file con stesso nome
+CreateNew->crea ma se ce gia nome lancia eccezione
+Open->apre il file se non esiste eccezione
+OpenOrCreate->Apre file, se non esiste lo crea
+Truncate->apre il file, e cancella il suo contenuto
+Append->apre il file se esiste non cancella il suo contenuto
+
+Altri metodi di File
+
+Exists(string path)
+Delete(string path)
+Move(string sourceFile, string destFile)
+OpenText()..... leggi slides.
+
+classe static Directory
+Exists
+CreateDirectory
+Delete
+Move
+GetFiles
+GetCurrentDirectory
+
+come leggere da un File
+ci sono modi diversi
+aprire file:
+
+StreamReader file = File.OpenText(path);
+while(!file.EndOfStream)//finche il mio file non è finito
+{
+	string riga = file.ReadLine();
+	Console.WriteLine(riga);
+}
+file.Close();//chiudere sempre file!!!
+
+
+ leggi doc e slides
+
+serializzazione
+trasformo uno stato in una stringa tipo una classe in una stringa
+
+deserializzazione
+dalla stringa ri ottengo il dato
+
+libreria dotnet per serializzare e deserializzare
+	tools->NuGet package manager->manage NuGet package for solution
+
+Newtonsoft
+
+Lezione Venerdi 15 Settembre 2023
+
+Garbage Collector
+
+con la parola new noi creiamo oggetti.. ma come li eliminiamo per fare spazio in memoria?
+Con il Garbage Collector, su C# ci pensa lui a rimuovere anche eventuali memory Leak a differenza di C o C++
+
+Approfondimento
+
+mettendo il ? alla fine del tipo di una dichiarazione o inizializzazione di  variabile gli dici che potrebbe essere nullo
+string? stringaForse = Console.ReadLine();
+
+col ?? controlli che sia nullo
+o anche ??=
+
+se metto il ? in un espressione vuol dire, non eseguire cio che ce a destra se quello alla tua sinistra è null
+obj?.eseguiSeTuttoOk();
+
+
+Lezione Martedi 19 Settembre 2023
+DATABASE
+
+Sistema tecnologico che serve a gestire una collezione organizzata di dati coerenti.
+Permette:
+- creazione ,cancellazione, aggiornamento e modifica dei dati->CRUD
+- Ricerca avanzata di dati->con SQL
+- Salvataggio permanente dati
+
+Database relazionali-> per organizzare i dati in maniera logico matematica
+Database Management System-> gestore di Database// MySQL, MS SQL ecc..
+
+RDBMS->Relational Database Management System-> il mezzo per gestire la collezione di dati(il Database)
+
+Nella lingua parlata database si usa anche per indicare il DBMS
+
+NoSQL-> categoria di DBMS che non implementano le regole relazionali(es.MongoDB)
+
+I DBMS possono eseguire operazioni sui dati in transazioni
+Transazioni-> tutti i log e le sequenze di modifiche varie di dati dalla prima operazione all ultima
+
+Serve avere tutta la lista di cosa è successo e cosa doveva succedere in modo da risolvere eventuali errori o problemi per ritornare allo stato iniziale ovvero uno STATO CONSISTENTE
+
+se fai 2 query una dopo l'altra senza aver messo una transazione sono a se stanti quindi se una fallisce non puoi tornare indietro.
+Se le racchiudi in una transazione unica, come se fosse un contenitore, devono essere eseguite tutte altrimenti non verranno salvate le modifiche e il db tornera allo stato precedente
+
+ACID properties
+
+- Atomicita: o la transazione viene fatta tutta o è nulla
+- Coerenza: i dati devono essere consistenti fra di loro, se vanno via 100€ da un record, dovranno essere per forza andati da un altra parte.
+- Isolamento: ogni transazione deve essere eseguita in modo isolato e indipendente dalle altre transazioni. L'eventuale fallimento di una non deve interferire con le altre transazioni.
+- Durabilità(Persistenza):Una volta che la transazione richiede un commit, quindi ha finito e salva, i cambiamenti non devono essere piu persi
+
+
+I RDBMS(relazionali) sono disposte in tabelle(entità) righe(tuple) e colonne.
+
+struttura tabella:
+	- Nome tabella
+	- Colonne
+	- Indici
+
+
+
+
